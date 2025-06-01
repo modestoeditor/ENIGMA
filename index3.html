@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capítulo III</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Capítulo III — O Coração do Herói</h1>
+      <p>
+        <em
+          >Após milhares de aventuras durante os séculos, os magos perceberam
+          que eram mais poderosos do que imaginavam juntos! Durante algumas
+          jornadas, Sir Lucen percebe que estava sentindo algo vindo da Lady
+          Élinor, mas era maior que uma simples magia... Algo de errado não
+          estava certo naquela missão.</em
+        >
+      </p>
+
+      <label
+        >Enigma Final: Quando o Sir Lucen viu Lady Élinor, ele percebeu que era
+        algo muito além de uma magia comum, ele estava...</label
+      >
+      <input id="resposta3" type="text" placeholder="Digite a resposta" />
+      <button onclick="verificarResposta()">Finalizar</button>
+
+      <div id="mensagemFinal" class="final" style="display: none">
+        <p>
+          ✦ Que esta lenda dê início ao mais belo capítulo da nossa história ✦
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function verificarResposta() {
+        const resposta = document
+          .getElementById("resposta3")
+          .value.trim()
+          .toUpperCase();
+        if (resposta === "APAIXONADO") {
+          document.getElementById("mensagemFinal").style.display = "block";
+        } else {
+          alert("Resposta incorreta. Tente novamente!");
+        }
+      }
+    </script>
+    <footer>
+      Este enigma foi traduzido dos pergaminhos originais encontrados na antiga
+      toca de Bolsão,<br />
+      citado nos apêndices secretos da edição rara de <em>O Hobbit</em>, de
+      J.R.R. Tolkien.<br />
+      Preservado pelos guardiões do Condado, foi dito que apenas corações
+      verdadeiros o decifram.
+    </footer>
+  </body>
+</html>

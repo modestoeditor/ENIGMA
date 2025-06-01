@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capítulo II</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>⚔️ Capítulo II — O Vento da Discórdia</h1>
+      <p>
+        <em
+          >Espalhou-se um rumor: "Sir Lucen jamais iria cair nas magias de Lady
+          Élinor, pois ele é um mago extremamente poderoso...." Sentindo-se
+          traída pelas entrelinhas do destino, Lady Élinor fechou seu coração
+          com um sentimento amargo e terrível.</em
+        >
+      </p>
+
+      <label
+        >Enigma: 01010001 01110101 01100101 00100000 01100101 01101101 01101111
+        11100111 11100011 01101111 00100000 01100100 01101111 01101101 01101001
+        01101110 01101111 01110101 00100000 01101111 00100000 01100011 01101111
+        01110010 01100001 11100111 11100011 01101111 00100000 01100100 01100101
+        01101100 01100001 00101100 00100000 01100001 01101001 01101110 01100100
+        01100001 00100000 01110001 01110101 01100101 00100000 01100110 01101111
+        01110011 01110011 01100101 00100000 01110011 11110011 00100000 01100100
+        01100101 01100110 01100101 01110011 01100001 00100000 01100011 01101111
+        01101110 01110100 01110010 01100001 00100000 01101111 00100000 01110001
+        01110101 01100101 00100000 01110011 01100101 01101110 01110100 01101001
+        01100001 00100000 01100100 01100101 00100000 01110110 01100101 01110010
+        01100100 01100001 01100100 01100101 00111111
+      </label>
+      <input id="resposta2" type="text" placeholder="Digite a resposta" />
+      <button onclick="verificarResposta()">Avançar</button>
+    </div>
+
+    <script>
+      function verificarResposta() {
+        const resposta = document
+          .getElementById("resposta2")
+          .value.trim()
+          .toUpperCase();
+        if (resposta === "ÓDIO" || resposta === "ODIO") {
+          window.location.href = "index3.html";
+        } else {
+          alert("Resposta incorreta. Tente novamente!");
+        }
+      }
+    </script>
+    <footer>
+      Este enigma foi traduzido dos pergaminhos originais encontrados na antiga
+      toca de Bolsão,<br />
+      citado nos apêndices secretos da edição rara de <em>O Hobbit</em>, de
+      J.R.R. Tolkien.<br />
+      Preservado pelos guardiões do Condado, foi dito que apenas corações
+      verdadeiros o decifram.
+    </footer>
+  </body>
+</html>

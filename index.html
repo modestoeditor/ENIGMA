@@ -1,0 +1,60 @@
+<!-- index1.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capítulo I — Os Sinais Invisíveis</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🏰 Capítulo I — Os Sinais Invisíveis</h1>
+      <p>
+        <em
+          >No Reino do Cotidiano, a bela Lady Élinor tentava encantar Sir Lucen
+          com magias sutis e palavras suaves. Mas seus encantos pareciam
+          invisíveis, ela não era boa com magias...</em
+        >
+      </p>
+
+      <label for="resposta1">
+        Enigma: Quid appellantur hae manifestationes silentes, quas soli oculi
+        attenti percipiunt?
+      </label>
+      <input id="resposta1" type="text" placeholder="Digite a resposta" />
+      <button type="button" onclick="verificarResposta()">Avançar</button>
+
+      <div class="final" id="mensagem-acerto" style="display: none">
+        Parabéns! Você acertou e passou de fase.
+      </div>
+    </div>
+
+    <footer>
+      Este enigma foi traduzido dos pergaminhos originais encontrados na antiga
+      toca de Bolsão,<br />
+      citado nos apêndices secretos da edição rara de <em>O Hobbit</em>, de
+      J.R.R. Tolkien.<br />
+      Preservado pelos guardiões do Condado, foi dito que apenas corações
+      verdadeiros o decifram.
+    </footer>
+
+    <script>
+      function verificarResposta() {
+        const resposta = document
+          .getElementById("resposta1")
+          .value.trim()
+          .toUpperCase();
+        if (resposta === "SINAIS") {
+          // Exibe mensagem de acerto antes de redirecionar
+          document.getElementById("mensagem-acerto").style.display = "block";
+          setTimeout(() => {
+            window.location.href = "index2.html";
+          }, 1000);
+        } else {
+          alert("Resposta incorreta. Tente novamente!");
+        }
+      }
+    </script>
+  </body>
+</html>
